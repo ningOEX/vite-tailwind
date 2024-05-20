@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* 修改滚动条轨道的样式 */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* 修改滚动条轨道背景 */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* 修改滚动条滑块的样式 */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+    /* 设置滑块的高度 */
+}
+
+/* 修改滚动条滑块悬停时的样式 */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.el-header {
+    --el-header-padding: 0 !important;
+}
+
+.el-main {
+    --el-main-padding: 0 !important;
+}
+
+.el-footer {
+    --el-footer-padding: 0 !important;
+}
